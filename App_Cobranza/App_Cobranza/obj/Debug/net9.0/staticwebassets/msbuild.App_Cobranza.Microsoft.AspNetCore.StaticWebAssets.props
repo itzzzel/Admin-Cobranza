@@ -678,8 +678,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qwphav3ogx</Fingerprint>
-      <Integrity>avMNg/2NPSwSgSQUcszdmXngd+mJ6LdUwPJx1OjgqpI=</Integrity>
+      <Fingerprint>j1h0vb2ypo</Fingerprint>
+      <Integrity>R4EbGHnwQQ4eEOiEm/YK0S7Cu4KOwTkPyXgFAQyZt/w=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\login.png'))</OriginalItemSpec>

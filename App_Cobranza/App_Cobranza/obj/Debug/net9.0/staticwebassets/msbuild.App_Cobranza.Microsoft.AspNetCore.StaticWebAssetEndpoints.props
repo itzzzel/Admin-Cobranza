@@ -438,23 +438,23 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Up3cYGnZmm10PWu0biAy\u002B77j7Kd7nG\u002BmCBkQMlqo26g="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1685"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Up3cYGnZmm10PWu0biAy\u002B77j7Kd7nG\u002BmCBkQMlqo26g=\u0022"},{"Name":"Last-Modified","Value":"Fri, 13 Jun 2025 18:13:12 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/App_Cobranza/lib/bootstrap/dist/css/login.j1h0vb2ypo.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\login.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"j1h0vb2ypo"},{"Name":"integrity","Value":"sha256-R4EbGHnwQQ4eEOiEm/YK0S7Cu4KOwTkPyXgFAQyZt/w="},{"Name":"label","Value":"_content/App_Cobranza/lib/bootstrap/dist/css/login.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"92713"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022R4EbGHnwQQ4eEOiEm/YK0S7Cu4KOwTkPyXgFAQyZt/w=\u0022"},{"Name":"Last-Modified","Value":"Fri, 13 Jun 2025 19:55:53 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/App_Cobranza/lib/bootstrap/dist/css/login.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\login.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-avMNg/2NPSwSgSQUcszdmXngd\u002BmJ6LdUwPJx1OjgqpI="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"106163"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022avMNg/2NPSwSgSQUcszdmXngd\u002BmJ6LdUwPJx1OjgqpI=\u0022"},{"Name":"Last-Modified","Value":"Fri, 13 Jun 2025 19:48:32 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-R4EbGHnwQQ4eEOiEm/YK0S7Cu4KOwTkPyXgFAQyZt/w="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"92713"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022R4EbGHnwQQ4eEOiEm/YK0S7Cu4KOwTkPyXgFAQyZt/w=\u0022"},{"Name":"Last-Modified","Value":"Fri, 13 Jun 2025 19:55:53 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/App_Cobranza/lib/bootstrap/dist/css/login.qmehdzyiuc.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\login.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qmehdzyiuc"},{"Name":"integrity","Value":"sha256-Up3cYGnZmm10PWu0biAy\u002B77j7Kd7nG\u002BmCBkQMlqo26g="},{"Name":"label","Value":"_content/App_Cobranza/lib/bootstrap/dist/css/login.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1685"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Up3cYGnZmm10PWu0biAy\u002B77j7Kd7nG\u002BmCBkQMlqo26g=\u0022"},{"Name":"Last-Modified","Value":"Fri, 13 Jun 2025 18:13:12 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/App_Cobranza/lib/bootstrap/dist/css/login.qwphav3ogx.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\login.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qwphav3ogx"},{"Name":"integrity","Value":"sha256-avMNg/2NPSwSgSQUcszdmXngd\u002BmJ6LdUwPJx1OjgqpI="},{"Name":"label","Value":"_content/App_Cobranza/lib/bootstrap/dist/css/login.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"106163"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022avMNg/2NPSwSgSQUcszdmXngd\u002BmJ6LdUwPJx1OjgqpI=\u0022"},{"Name":"Last-Modified","Value":"Fri, 13 Jun 2025 19:48:32 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/App_Cobranza/lib/bootstrap/dist/js/bootstrap.bundle.4094rpi4f9.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.bundle.js'))</AssetFile>
