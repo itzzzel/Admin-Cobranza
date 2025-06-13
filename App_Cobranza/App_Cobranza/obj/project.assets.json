@@ -5164,23 +5164,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rafae\\.nuget\\packages\\": {},
+    "C:\\Users\\itzel\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rafae\\Source\\Repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
+      "projectUniqueName": "C:\\Users\\itzel\\source\\repos\\itzzzel\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
       "projectName": "App_Cobranza",
-      "projectPath": "C:\\Users\\Rafae\\Source\\Repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
-      "packagesPath": "C:\\Users\\Rafae\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rafae\\Source\\Repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\obj\\",
+      "projectPath": "C:\\Users\\itzel\\source\\repos\\itzzzel\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
+      "packagesPath": "C:\\Users\\itzel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\itzel\\source\\repos\\itzzzel\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Rafae\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\itzel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5207,7 +5207,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -5265,7 +5265,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
