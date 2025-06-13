@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GUp+8V8ip+OmDZr9qkjaxvU5ih0Q+XIo34jQvEhbJOc=",
+  "Hash": "M3QgcG10bY1AV++DkLPTDKgY9i3NO877MI96nDK37B0=",
   "Source": "App_Cobranza",
   "BasePath": "_content/App_Cobranza",
   "Mode": "Default",
@@ -4803,6 +4803,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\login.css"
+    },
+    {
+      "Identity": "C:\\Users\\itzel\\source\\repos\\itzzzel\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\wwwroot\\lib\\bootstrap\\dist\\css\\login.png",
+      "SourceId": "App_Cobranza",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\itzel\\source\\repos\\itzzzel\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\wwwroot\\",
+      "BasePath": "_content/App_Cobranza",
+      "RelativePath": "lib/bootstrap/dist/css/login#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qwphav3ogx",
+      "Integrity": "avMNg/2NPSwSgSQUcszdmXngd+mJ6LdUwPJx1OjgqpI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\login.png"
     },
     {
       "Identity": "C:\\Users\\itzel\\source\\repos\\itzzzel\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
@@ -26384,6 +26405,43 @@
       ]
     },
     {
+      "Route": "lib/bootstrap/dist/css/login.png",
+      "AssetFile": "C:\\Users\\itzel\\source\\repos\\itzzzel\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\wwwroot\\lib\\bootstrap\\dist\\css\\login.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "106163"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"avMNg/2NPSwSgSQUcszdmXngd+mJ6LdUwPJx1OjgqpI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 19:48:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-avMNg/2NPSwSgSQUcszdmXngd+mJ6LdUwPJx1OjgqpI="
+        }
+      ]
+    },
+    {
       "Route": "lib/bootstrap/dist/css/login.qmehdzyiuc.css",
       "AssetFile": "C:\\Users\\itzel\\source\\repos\\itzzzel\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\obj\\Debug\\net9.0\\compressed\\9x8dskgyz9-qmehdzyiuc.gz",
       "Selectors": [
@@ -26541,6 +26599,51 @@
         {
           "Name": "integrity",
           "Value": "sha256-IENgxL7c4o1Vm3op7B2gy3+r77c7NVEZ1YRpIYRO23o="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/css/login.qwphav3ogx.png",
+      "AssetFile": "C:\\Users\\itzel\\source\\repos\\itzzzel\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\wwwroot\\lib\\bootstrap\\dist\\css\\login.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "106163"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"avMNg/2NPSwSgSQUcszdmXngd+mJ6LdUwPJx1OjgqpI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 19:48:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qwphav3ogx"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/css/login.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-avMNg/2NPSwSgSQUcszdmXngd+mJ6LdUwPJx1OjgqpI="
         }
       ]
     },

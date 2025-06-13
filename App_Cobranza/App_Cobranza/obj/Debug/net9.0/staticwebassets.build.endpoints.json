@@ -19481,6 +19481,43 @@
       ]
     },
     {
+      "Route": "lib/bootstrap/dist/css/login.png",
+      "AssetFile": "lib/bootstrap/dist/css/login.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "106163"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"avMNg/2NPSwSgSQUcszdmXngd+mJ6LdUwPJx1OjgqpI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 19:48:32 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-avMNg/2NPSwSgSQUcszdmXngd+mJ6LdUwPJx1OjgqpI="
+        }
+      ]
+    },
+    {
       "Route": "lib/bootstrap/dist/css/login.qmehdzyiuc.css",
       "AssetFile": "lib/bootstrap/dist/css/login.css.gz",
       "Selectors": [
@@ -19638,6 +19675,51 @@
         {
           "Name": "label",
           "Value": "lib/bootstrap/dist/css/login.css.gz"
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/css/login.qwphav3ogx.png",
+      "AssetFile": "lib/bootstrap/dist/css/login.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "106163"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"avMNg/2NPSwSgSQUcszdmXngd+mJ6LdUwPJx1OjgqpI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 19:48:32 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qwphav3ogx"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-avMNg/2NPSwSgSQUcszdmXngd+mJ6LdUwPJx1OjgqpI="
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/css/login.png"
         }
       ]
     },

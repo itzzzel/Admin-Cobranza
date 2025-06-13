@@ -153,6 +153,10 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\login.css"
     },
     {
+      "Id": "C:\\Users\\itzel\\source\\repos\\itzzzel\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\wwwroot\\lib\\bootstrap\\dist\\css\\login.png",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\login.png"
+    },
+    {
       "Id": "C:\\Users\\itzel\\source\\repos\\itzzzel\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
