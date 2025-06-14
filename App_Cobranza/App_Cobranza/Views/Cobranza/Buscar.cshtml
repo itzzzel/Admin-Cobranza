@@ -1,0 +1,175 @@
+﻿@model App_Cobranza.Models.ViewModels.Cliente.BuscarVM
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "BÚSQUEDA DE CLIENTES";
+}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #60a3bc;
+       ;
+        ; /* Azul claro suave */
+        margin: 0;
+        padding: 20px;
+    }
+
+    .container-main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .cobranza-card {
+        background-color: #60a3bc;
+        ;
+        border-radius: 8px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        padding: 25px;
+    }
+
+    .cobranza-card-body {
+        padding: 20px;
+    }
+
+    .cobranza-form-title {
+        font-size: 22px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .cobranza-form-group {
+        margin-bottom: 20px;
+    }
+
+    .cobranza-form-label {
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 8px;
+    }
+
+    .cobranza-input {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #002b5c;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .cobranza-form-actions {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .cobranza-btn-primary {
+        background-color: #2a75ff; /* Azul más vibrante */
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+        .cobranza-btn-primary:hover {
+            background-color: #0055cc;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+    .menu-bar {
+        display: flex;
+        background-color: #2a75ff; /* Mismo azul que el botón */
+        padding: 12px 20px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-item {
+        color: #002b5c;
+        margin-right: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+
+        .menu-item:hover {
+            color: #002b5c;
+            transform: translateY(-1px);
+        }
+
+    .user-info {
+        margin-left: auto;
+        color: #002b5c;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 2px 8px;
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    </style>
+<div class="container-main">
+    <div class="cobranza-card">
+        <div class="cobranza-card-body">
+            <form asp-action="BuscarCliente" method="post">
+                <div class="cobranza-form-title">
+                    FAVOR DE INGRESAR EL NOMBRE DE SU CLIENTE O SU ID
+                </div>
+
+                <div class="cobranza-form-group">
+                    <label class="cobranza-form-label">CLIENTE:</label>
+                    <input asp-for="busqueda" class="form-control cobranza-input" placeholder="Nombre completo del cliente">
+                </div>
+
+                <div class="cobranza-form-group">
+                    <label class="cobranza-form-label">ID:</label>
+                    <input asp-for="id" class="form-control cobranza-input" placeholder="ID del cliente">
+                </div>
+
+                <div class="cobranza-form-actions">
+                    <button type="submit" class="cobranza-btn-primary">
+                        INGRESAR
+                    </button>
+                </div>
+            </form>
+
+            @if (Model != null && Model.Resultados != null && Model.Resultados.Any())
+            {
+                <div class="table-responsive mt-4">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Documento</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var cliente in Model.Resultados)
+                            {
+                                <tr>
+                                    <td>@cliente.id</td>
+                                    <td>@cliente.nombre</td>
+                                    <td>@cliente.documento</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else if (ViewBag.Searched == true)
+            {
+                <div class="alert alert-info mt-4">
+                    No se encontraron resultados para la búsqueda.
+                </div>
+            }
+        </div>
+    </div>
+</div>

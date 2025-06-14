@@ -1,53 +1,258 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - App_Cobranza</title>
-    <script type="importmap"></script>
+    <title>@ViewData["Title"] - Sistema de Cobranza</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/App_Cobranza.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
     @await RenderSectionAsync("Styles", required: false)
+    <style>
+      
+        html, body {
+            height: 100%;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #60a3bc;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        #page-container {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #content-wrap {
+            flex: 1;
+        }
+
+        .container-main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .cobranza-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid #d0e2ff;
+        }
+
+        .cobranza-card-body {
+            padding: 15px;
+        }
+
+        .cobranza-form-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #2a75ff;
+            margin-bottom: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #d0e2ff;
+            padding-bottom: 10px;
+        }
+
+        .cobranza-form-group {
+            margin-bottom: 25px;
+        }
+
+        .cobranza-form-label {
+            display: block;
+            font-size: 16px;
+            font-weight: 500;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        .cobranza-input {
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            border: 1px solid #cce0ff;
+            border-radius: 6px;
+            box-sizing: border-box;
+            transition: all 0.3s;
+            background-color: #f8fbff;
+        }
+
+            .cobranza-input:focus {
+                border-color: #2a75ff;
+                outline: none;
+                box-shadow: 0 0 0 3px rgba(42, 117, 255, 0.15);
+                background-color: #ffffff;
+            }
+
+        .cobranza-form-actions {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .cobranza-btn-primary {
+            background-color: #2a75ff;
+            color: white;
+            border: none;
+            padding: 14px 35px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 2px 12px rgba(42, 117, 255, 0.3);
+            border: 1px solid #1a5bd9;
+        }
+
+            .cobranza-btn-primary:hover {
+                background-color: #1a5bd9;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 16px rgba(42, 117, 255, 0.4);
+            }
+
+        .menu-bar {
+            display: flex;
+            background-color: #2a75ff;
+            padding: 15px 30px;
+            margin-bottom: 30px;
+            border-radius: 0;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+            align-items: center;
+        }
+
+        .menu-item {
+            color: white;
+            margin-right: 25px;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+        }
+
+            .menu-item:hover {
+                color: #e6f2ff;
+                border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+                transform: none;
+            }
+
+        .user-info {
+            margin-left: auto;
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 6px 15px;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .navbar-custom {
+            background-color: #2a75ff !important;
+            border-bottom: 1px solid #d0e2ff !important;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        }
+
+            .navbar-custom .navbar-brand,
+            .navbar-custom .nav-link {
+                color: #000000 !important;
+                font-weight: 500;
+            }
+
+                .navbar-custom .nav-link:hover {
+                    color: #2a75ff !important;
+                }
+
+            .navbar-custom .active {
+                font-weight: 600;
+                color: #002b5c !important;
+                background-color: rgba(42, 117, 255, 0.1);
+                border-radius: 5px;
+            }
+
+        .footer-custom {
+            background-color: #60a3bc;
+            border-top: 1px solid #d0e2ff;
+            padding: 25px 0;
+            color: #444;
+            width: 100%;
+        }
+
+        /* Estilo para el botón de login cuando está activo */
+        .nav-link.active[href*="Login"] {
+            color: #002b5c !important;
+            background-color: rgba(255, 255, 255, 0.2) !important;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">App_Cobranza</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                            <!-- AÑADE ESTE NUEVO ÍTEM PARA EL LOGIN -->
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="/Login/Login" target="_blank">Login</a>
-                        </li>
-                    </ul>
-                    <partial name="_LoginPartial" />
-                </div>
+    <div id="page-container">
+        <div id="content-wrap">
+            <header>
+                <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-custom border-bottom box-shadow mb-3">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                            <i class="fas fa-calculator"></i> Cobranza
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                            <ul class="navbar-nav flex-grow-1">
+                                <li class="nav-item">
+                                    <a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Home" ? "active" : "")"
+                                       asp-controller="Home" asp-action="Index">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Cobranza" ? "active" : "")"
+                                       asp-controller="Cobranza" asp-action="BuscarCliente">Cobranza</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav">
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <li class="nav-item">
+                                        <span class="nav-link">Bienvenido, @User.Identity.Name</span>
+                                    </li>
+                                    <li class="nav-item">
+                                        <form asp-controller="Login" asp-action="Logout" method="post" class="form-inline">
+                                            <button type="submit" class="nav-link btn btn-link">Cerrar sesión</button>
+                                        </form>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li class="nav-item">
+                                        <a class="nav-link @(ViewContext.RouteData.Values["Controller"]?.ToString() == "Login" ? "active" : "")"
+                                           asp-controller="Login" asp-action="Login">Iniciar sesión</a>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="container">
+                <main role="main" class="pb-3">
+                    @RenderBody()
+                </main>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+        </div>
+
+        <footer class="border-top footer footer-custom text-muted">
+            <div class="container text-center">
+                &copy; @DateTime.Now.Year - Sistema de Cobranza
+            </div>
+        </footer>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - App_Cobranza - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

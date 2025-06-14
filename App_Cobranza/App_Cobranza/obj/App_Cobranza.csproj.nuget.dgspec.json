@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\itzel\\source\\repos\\itzzzel\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj": {}
+    "C:\\Users\\Rafae\\Source\\Repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj": {}
   },
   "projects": {
-    "C:\\Users\\itzel\\source\\repos\\itzzzel\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj": {
+    "C:\\Users\\Rafae\\Source\\Repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\itzel\\source\\repos\\itzzzel\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
+        "projectUniqueName": "C:\\Users\\Rafae\\Source\\Repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
         "projectName": "App_Cobranza",
-        "projectPath": "C:\\Users\\itzel\\source\\repos\\itzzzel\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
-        "packagesPath": "C:\\Users\\itzel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\itzel\\source\\repos\\itzzzel\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\obj\\",
+        "projectPath": "C:\\Users\\Rafae\\Source\\Repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
+        "packagesPath": "C:\\Users\\Rafae\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rafae\\source\\repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\itzel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rafae\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,12 +44,16 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.Cookies": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.3, )"
@@ -61,6 +65,10 @@
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
               "version": "[9.0.3, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -81,6 +89,18 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.5, )"
+            },
+            "Microsoft.Owin.Security.Cookies": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.3.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.9.0, )"
             }
           },
           "imports": [
@@ -102,7 +122,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

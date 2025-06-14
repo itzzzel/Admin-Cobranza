@@ -1,0 +1,141 @@
+﻿/* Variables de color - Paleta de azules profesionales */
+:root {
+    --azul-oscuro: #1a4b8c; /* Azul corporativo principal */
+    --azul-medio: #3a7bc8; /* Azul intermedio */
+    --azul-claro: #e6f2ff; /* Fondo claro */
+    --azul-boton: #2a75ff; /* Azul vibrante para botones */
+    --azul-hover: #1a5cb8; /* Azul para hover */
+    --gris-texto: #333333; /* Texto oscuro */
+    --gris-borde: #d0d0d0; /* Bordes sutiles */
+}
+
+/* Estilos generales - Minimalistas como el PDF */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--azul-medio);
+    margin: 0;
+    padding: 0;
+    color: var(--gris-texto);
+    line-height: 1.6;
+}
+
+/* Barra de navegación superior (HOME | COBRANZA | ADMINISTRADOR) */
+.cobranza-navbar {
+    background-color: var(--azul-claro);
+    padding: 14px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.cobranza-navbar-items span {
+    margin-right: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+    .cobranza-navbar-items span:hover {
+        color: #cce0ff;
+    }
+
+    .cobranza-navbar-items span:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transition: width 0.3s;
+    }
+
+    .cobranza-navbar-items span:hover:after {
+        width: 100%;
+    }
+
+/* Contenedor principal del formulario */
+.cobranza-form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Título del formulario */
+.cobranza-form-title {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: var(--azul-oscuro);
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--gris-borde);
+}
+
+/* Campos del formulario */
+.cobranza-form-group {
+    margin-bottom: 25px;
+}
+
+.cobranza-form-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--azul-oscuro);
+}
+
+.cobranza-form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--gris-borde);
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+    .cobranza-form-input:focus {
+        border-color: var(--azul-medio);
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(58, 123, 200, 0.2);
+    }
+
+/* Botón INGRESAR */
+.cobranza-submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--azul-boton);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+    .cobranza-submit-btn:hover {
+        background-color: var(--azul-hover);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+/* Usuario en la barra de navegación */
+.cobranza-user {
+    background-color: rgba(255,255,255,0.15);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}

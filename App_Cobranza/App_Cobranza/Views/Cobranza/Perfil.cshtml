@@ -1,0 +1,74 @@
+﻿@model App_Cobranza.Models.ViewModels.Cliente.PerfilVM
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Perfil de Cliente";
+}
+
+<div class="container-main">
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">
+            <div class="d-flex justify-content-between align-items-center">
+                <h3 class="mb-0"><i class="fas fa-user mr-2"></i> CLIENTE: @Model.nombrecliente</h3>
+                <span class="badge bg-light text-dark">ID: @Model.idcliente</span>
+            </div>
+        </div>
+
+        <div class="card-body">
+            <div class="alert alert-info">
+                <h5 class="mb-0"><i class="fas fa-info-circle mr-2"></i> ESTE ES EL INICIO</h5>
+            </div>
+
+            <h4 class="mt-4 mb-3 text-primary">
+                <i class="fas fa-boxes mr-2"></i> PRODUCTO(S) ADQUIRIDO(S)
+            </h4>
+
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>PRODUCTO</th>
+                            <th>PRECIO TOTAL</th>
+                            <th>CUOTA</th>
+                            <th>PLAZO</th>
+                            <th>PAGOS</th>
+                            <th>RESTANTE</th>
+                            <th>ACCIONES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var producto in Model.productos)
+                        {
+                            <tr>
+                                <td>@producto.id</td>
+                                <td>@producto.nombre</td>
+                                <td class="text-end">@producto.preciototal.ToString("C")</td>
+                                <td class="text-end">@(producto.cantidadabonar.ToString("C") ?? "N/A")</td>
+                                <td>@producto.plazodiferido</td>
+                                <td class="text-center">@producto.pagoscompletados</td>
+                                <td class="text-end @(producto.cantidadrestante > 0 ? "text-danger" : "text-success")">
+                                    @producto.cantidadrestante.ToString("C")
+                                </td>
+                                <td class="text-center">
+                                    @if (producto.cantidadrestante > 0)
+                                    {
+                                        <a asp-controller="Pago" asp-action="Abonar"
+                                           asp-route-idProducto="@producto.id"
+                                           class="btn btn-primary btn-sm">
+                                            <i class="fas fa-hand-holding-usd mr-1"></i> ABONAR
+                                        </a>
+                                    }
+                                    <a asp-controller="Pago" asp-action="Historial"
+                                       asp-route-idProducto="@producto.id"
+                                       class="btn btn-outline-primary btn-sm ml-1">
+                                        <i class="fas fa-history mr-1"></i> HISTORIAL
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

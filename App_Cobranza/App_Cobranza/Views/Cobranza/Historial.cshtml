@@ -1,0 +1,46 @@
+﻿@model List<App_Cobranza.Models.ViewModels.Pago.HistorialVM>
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Historial de Pagos";
+}
+
+<div class="container-main">
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">
+            <h3 class="mb-0"><i class="fas fa-history mr-2"></i> HISTORIAL DE PAGOS</h3>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table id="pagosTable" class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>ID TRANSACCIÓN</th>
+                            <th>FECHA</th>
+                            <th>MONTO</th>
+                            <th>MÉTODO</th>
+                            <th>ESTADO</th>
+                            <th>FACTURA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var pago in Model)
+                        {
+                            <tr>
+                                <td>@pago.idtransaccion</td>
+                                <td>@pago.fecha.ToString("dd/MM/yyyy")</td>
+                                <td>@pago.monto.ToString("C")</td>
+                                <td>@pago.metodopago</td>
+                                <td>
+                                    <span class="badge @(pago.estado == "Completado" ? "bg-success" : "bg-warning")">
+                                        @pago.estado
+                                    </span>
+                                </td>
+                                <td>@pago.facturarelacionada</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

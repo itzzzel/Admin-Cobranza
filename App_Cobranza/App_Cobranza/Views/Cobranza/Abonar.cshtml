@@ -1,0 +1,56 @@
+﻿@model App_Cobranza.Models.ViewModels.Pago.AbonarVM
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Registrar Abono";
+}
+
+<div class="container-main">
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">
+            <h3 class="mb-0"><i class="fas fa-money-bill-wave mr-2"></i> REGISTRAR ABONO</h3>
+        </div>
+
+        <div class="card-body">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-id-card fa-2x"></i>
+                                </div>
+                                <div>
+                                    <div class="text-muted small">CLIENTE</div>
+                                    <div class="fw-bold">@Model.idcliente - @Model.nombre</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-file-invoice fa-2x"></i>
+                                </div>
+                                <div>
+                                    <div class="text-muted small">FACTURA</div>
+                                    <div class="fw-bold">@Model.idfactura</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form asp-action="AbonarPago" method="post">
+                <input type="hidden" asp-for="idcliente" />
+                <input type="hidden" asp-for="idfactura" />
+                <input type="hidden" asp-for="nombre" />
+
+                <!-- Resto del formulario se mantiene igual -->
+            </form>
+        </div>
+    </div>
+</div>
