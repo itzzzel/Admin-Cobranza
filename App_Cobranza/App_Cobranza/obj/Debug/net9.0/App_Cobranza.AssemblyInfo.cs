@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("App_Cobranza")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ade900113d720facb7e60e5d12511643b2bb5c43")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5290de5b303be4ba1441e7e516599ec05dd55d7")]
 [assembly: System.Reflection.AssemblyProductAttribute("App_Cobranza")]
 [assembly: System.Reflection.AssemblyTitleAttribute("App_Cobranza")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

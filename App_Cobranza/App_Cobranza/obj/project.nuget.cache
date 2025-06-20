@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+3URDDkc3vQ=",
+  "dgSpecHash": "O/Kgsh6IIfM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rafae\\Source\\Repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
+  "projectFilePath": "C:\\Users\\Rafae\\source\\repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rafae\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Rafae\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
@@ -144,9 +144,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "El paquete \"Microsoft.Owin 4.2.2\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "projectPath": "C:\\Users\\Rafae\\Source\\Repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
+      "projectPath": "C:\\Users\\Rafae\\source\\repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Rafae\\Source\\Repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
+      "filePath": "C:\\Users\\Rafae\\source\\repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
       "libraryId": "Microsoft.Owin",
       "targetGraphs": [
         "net9.0"
@@ -156,9 +156,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "El paquete \"Microsoft.Owin.Security 4.2.2\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "projectPath": "C:\\Users\\Rafae\\Source\\Repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
+      "projectPath": "C:\\Users\\Rafae\\source\\repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Rafae\\Source\\Repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
+      "filePath": "C:\\Users\\Rafae\\source\\repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
       "libraryId": "Microsoft.Owin.Security",
       "targetGraphs": [
         "net9.0"
@@ -168,9 +168,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "El paquete \"Microsoft.Owin.Security.Cookies 4.2.2\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "projectPath": "C:\\Users\\Rafae\\Source\\Repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
+      "projectPath": "C:\\Users\\Rafae\\source\\repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Rafae\\Source\\Repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
+      "filePath": "C:\\Users\\Rafae\\source\\repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
       "libraryId": "Microsoft.Owin.Security.Cookies",
       "targetGraphs": [
         "net9.0"
@@ -180,9 +180,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "El paquete \"Owin 1.0.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "projectPath": "C:\\Users\\Rafae\\Source\\Repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
+      "projectPath": "C:\\Users\\Rafae\\source\\repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Rafae\\Source\\Repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
+      "filePath": "C:\\Users\\Rafae\\source\\repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
       "libraryId": "Owin",
       "targetGraphs": [
         "net9.0"

@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rafae\\Source\\Repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj": {}
+    "C:\\Users\\Rafae\\source\\repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rafae\\Source\\Repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj": {
+    "C:\\Users\\Rafae\\source\\repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rafae\\Source\\Repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
+        "projectUniqueName": "C:\\Users\\Rafae\\source\\repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
         "projectName": "App_Cobranza",
-        "projectPath": "C:\\Users\\Rafae\\Source\\Repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
+        "projectPath": "C:\\Users\\Rafae\\source\\repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\App_Cobranza.csproj",
         "packagesPath": "C:\\Users\\Rafae\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Rafae\\source\\repos\\Admin-Cobranza\\App_Cobranza\\App_Cobranza\\obj\\",
         "projectStyle": "PackageReference",
